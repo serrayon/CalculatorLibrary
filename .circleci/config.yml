@@ -14,12 +14,12 @@ jobs:
           name: install dependecies
           command: |
             python3 -m venv venv
-            source venv/bin/activate
+            . venv/bin/activate
             pip install -r requirements.txt
       # step 3: runlinter and tests
       - run: 
           name: run tests
           command: |
-            source venv/bin/activate
+            . venv/bin/activate
             flake8 --exclude=venv* --statistics
             pytest -v --cov=calculator
