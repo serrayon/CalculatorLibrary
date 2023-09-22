@@ -32,8 +32,6 @@ class Calculator():
     def __call__(self, n):
         if not isinstance(n, int) or n <= 0:
             raise TypeError('Invalid input')
-        # Implement calculator functionality here
-        # ...
 
 calc = Calculator()
 
